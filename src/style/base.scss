@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * @module 'style/base'
+ * @desc 公用sass变量、函数、mixin 等分装
+ * @author LieZuoPing
+ * @import './base'
+ */
+// 公共样式，sass变量
+$browser_default_font_size: 16 !default; // sass 跟聚设计图定义默认rem更元素，设计图的1/10
+$theme-color: rgba(0,0,0,0.6);
+
+//sass px 转rem函数
+@function px2rem($px) {
+  //$px为需要转换的字号
+  @return $px / $browser_default_font_size * 1rem;
+}

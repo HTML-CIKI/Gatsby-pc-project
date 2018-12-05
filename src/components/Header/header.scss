@@ -1,0 +1,44 @@
+@import '../../style/base.scss';
+@import '../../style/reset.scss';
+$header-height:  px2rem(56);
+$header-color: #f4cb8d;
+
+.zzdj-header-wrap {
+  border: solid 1px red;
+  width: 100%;
+  height:$header-height;
+  background: $theme-color;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  div {
+    box-sizing: border-box;
+  }
+  .zzdj-header-inner {
+    width: px2rem(1000);
+    height: 100%;
+    border: solid 1px red;
+    margin: 0 auto;
+    color: $header-color;
+    .logo {
+      float: left;
+    }
+    .zzdj-header-nav {
+      float: left;
+      height: 100%;
+      width: px2rem(500);
+      display: flex;
+      justify-content: right;
+      li {
+        flex: 1;
+        font-size: px2rem(20);
+        line-height: $header-height;
+        text-align: center;
+        .nav-item-link {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
