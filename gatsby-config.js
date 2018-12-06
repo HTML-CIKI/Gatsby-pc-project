@@ -2,6 +2,10 @@ module.exports = {
   siteMetadata: {
     title: '蜘蛛电竞-为精彩比赛喝彩',
   },
+  proxy: { // 设置代理
+    prefix: "/",
+    url: "http://pili-live-hls.djlive-match.live.zzdj.7659.com",
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
