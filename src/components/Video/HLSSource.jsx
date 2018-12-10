@@ -34,7 +34,7 @@ export default class HLSSource extends Component {
     return (
       <source
         src={this.props.src}
-        type={this.props.type || 'video/flv'} // type="rtmp/mp4"--rtmp  'application/x-mpegURL'-m3u8  type="video/flv"
+        type={this.props.type || 'application/x-mpegURL'} // type="rtmp/mp4"--rtmp  'application/x-mpegURL'-m3u8  type="video/flv"
         // type={this.props.type || 'application/x-mpegURL'} 
       />
     );
