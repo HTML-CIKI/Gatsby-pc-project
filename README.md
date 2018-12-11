@@ -8,23 +8,27 @@
     npm install -g gatsby-cli
 ```
 
-> 2、创建项目
+> 2、下载项目
 
 ```bash
-    gatsby new my-default-starter
+    git clone https://github.com/HTML-CIKI/Gatsby-pc-project.git
 ```
+> 3、安装依赖
+    ```sh
+        yarn 或 npm install
+    ```
 
-> 3、启动项目
+> 4、启动项目
 
 ```sh
-    cd my-default-starter/
+    cd Gatsby-pc-project/
     yarn start
 ```
 
 > 3、打包
 
 ```sh
-    cd my-default-starter/
+    cd Gatsby-pc-project/
     yarn build
 ```
 

@@ -5,6 +5,7 @@ import Image from '../components/image'
 import VideoPlay from '../components/Video/video'
 import { asyncGetMatchInfo } from '../service/service'
 import './index.scss';
+import Hotsort from '../components/Hotsort/hotsort'
 import { Banner } from '../components/index'
 
 class IndexPage extends Component {
@@ -52,6 +53,7 @@ class IndexPage extends Component {
     return (
       <Layout title={'蜘蛛电竞-为精彩比赛喝彩'}>
         <Banner></Banner>
+        <Hotsort></Hotsort>
         {/* <h1>首页</h1>
         <p>1111.</p>
         <p>2222</p>
