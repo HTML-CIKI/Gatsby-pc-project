@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import { Player } from 'video-react'
+// import { Player } from 'video-react'
 // import HLSSource from './HLSSource';
 // import FLVSource from './FLVSource'
 import './video.scss'

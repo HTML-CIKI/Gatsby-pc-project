@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/Layout/layout'
-import Image from '../components/image'
-import VideoPlay from '../components/Video/video'
-import './index.scss';
-import { Banner } from '../components/index'
+import Layout from '../../components/Layout/layout'
 
-class IndexPage extends Component {
+class ChalidPage extends Component {
 
   constructor (props) {
     super(props)
@@ -20,8 +16,8 @@ class IndexPage extends Component {
 
   render () {
     return (
-      <Layout title={'蜘蛛电竞-为精彩比赛喝彩'}>
-        <Banner></Banner>
+      <Layout title={'蜘蛛电竞-子页面'}>
+        11111
         {/* <h1>首页</h1>
         <p>1111.</p>
         <p>2222</p>
@@ -38,4 +34,4 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage
+export default ChalidPage

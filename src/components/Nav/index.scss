@@ -1,28 +1,47 @@
 @import '../../style/base.scss';
 @import '../../style/reset.scss';
 $header-height:  px2rem(56);
-$header-color: #f4cb8d;
+$header-color: #be9457;
 
 .zzdj-header-wrap {
-  border: solid 1px red;
   width: 100%;
   height:$header-height;
   background: $theme-color;
-  // position: fixed;
+  // position: absolute;
   // top: 0;
   // left: 0;
   // right: 0;
+  &:before, &:after {
+    content: " ";
+    display: block;
+    height: $header-height;
+    position: absolute;
+    top: 0;
+    width: px2rem(360);
+    box-sizing: border-box;
+  }
+  &:before {
+    left: 0;
+    background: url('../../assets/images/header/Act_header_left.gif') no-repeat 100%;
+  }
+  &:after {
+    right: 0;
+    background: url('../../assets/images/header/Act_header_right.gif') no-repeat 100%;
+  }
   div {
     box-sizing: border-box;
   }
   .zzdj-header-inner {
     width: px2rem(1000);
     height: 100%;
-    border: solid 1px red;
     margin: 0 auto;
     color: $header-color;
     .logo {
       float: left;
+      padding-top: px2rem(4);
+      img {
+        width: px2rem(160);
+      }
     }
     .zzdj-header-nav {
       float: left;
