@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/Layout/layout'
 import Image from '../components/image'
 import VideoPlay from '../components/Video/video'
+import { asyncGetMatchInfo } from '../service/service'
 import './index.scss';
 import { Banner } from '../components/index'
 
@@ -16,6 +17,35 @@ class IndexPage extends Component {
         title: '首页'
       }
     }
+  }
+
+  /**
+   * 渲染生命周期
+   */
+  componentDidMount() {
+    this.fnGetData()
+  }
+
+  /**
+   * 销毁生命周期
+   */
+  componentWillUnmount() {
+
+  }
+
+  /**
+   * 获取数据
+   */
+  fnGetData = () => {
+    asyncGetMatchInfo({
+      season_id: 14,
+      user_guid: 'ud103924a98dcbf1af8da41c096aa611e',
+      token: 'T2D0E99F4862679861F155F89EC4D5280',
+      appid: 'com.zzdj.esports.ios',
+    })
+      .then(res => {
+        console.log(res)
+      })
   }
 
   render () {

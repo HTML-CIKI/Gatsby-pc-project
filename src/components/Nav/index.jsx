@@ -25,7 +25,7 @@ class Nav extends Component {
             <li> <Link to="/page-2/" className="nav-item-link"> 游戏</Link></li>
             <li> <Link to="/index1/" className="nav-item-link"> 直播</Link></li>
             <li> <Link to="/child/child/" className="nav-item-link"> 分类</Link></li>
-            <li> <Link to="/" className="nav-item-link"> 视频</Link></li>
+            <li> <Link to="/page/page/" className="nav-item-link"> 视频</Link></li>
             <li> <Link to="/" className="nav-item-link"> 游戏</Link></li>
           </ul>
         </div>
