@@ -7,7 +7,7 @@
  */
 // 公共样式，sass变量
 $browser_default_font_size: 16 !default; // sass 跟聚设计图定义默认rem更元素，设计图的1/10
-$theme-color: rgba(0,0,0,0.6);
+$theme-color: #2d0305;
 
 //sass px 转rem函数
 @function px2rem($px) {

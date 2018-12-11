@@ -31,6 +31,12 @@
     cd Gatsby-pc-project/
     yarn build
 ```
+
+> 更改端口
+
+```sh
+    gatsby develop -p 7002
+```
 ### 项目结构说明
 
     .
