@@ -1,26 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/Layout/layout'
-import Image from '../components/image'
-import VideoPlay from '../components/Video/video'
-import './index.scss';
-<<<<<<< HEAD
-import Hotsort from '../components/Hotsort/hotsort'
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site1111 121212121rr.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <Hotsort></Hotsort>
-  </Layout>
-)
-=======
+// import Image from '../components/image'
 import { Banner } from '../components/index'
-
+import Nowlive from '../components/Imglazy/nowlive'
 class IndexPage extends Component {
 
   constructor (props) {
@@ -37,10 +20,27 @@ class IndexPage extends Component {
     return (
       <Layout title={'蜘蛛电竞-为精彩比赛喝彩'}>
         <Banner></Banner>
-        {/* <h1>首页</h1>
+        <Nowlive></Nowlive>
+        {/* <div>
+          <ImgLazy src="https://rpic.douyucdn.cn/asrpic/181212/1863767_1449_66.jpg/dy1"
+              placeholder="https://rpic.douyucdn.cn/asrpic/181212/229346_1528.jpg/dy1"
+              offset={-100} />
+        </div>
+        <div>
+          <ImgLazy src="https://rpic.douyucdn.cn/asrpic/181212/1863767_1449_66.jpg/dy1"
+              placeholder="https://rpic.douyucdn.cn/asrpic/181212/229346_1528.jpg/dy1"
+              offset={-100} />
+        </div>
+        <div>
+          <ImgLazy src="https://rpic.douyucdn.cn/asrpic/181212/1863767_1449_66.jpg/dy1"
+              placeholder="https://rpic.douyucdn.cn/asrpic/181212/229346_1528.jpg/dy1"
+              offset={-100} />
+        </div> */}
+        
+        <h1>首页</h1>
         <p>1111.</p>
         <p>2222</p>
-        <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
+        {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
           <Image />
         </div>
         <div>
@@ -52,6 +52,5 @@ class IndexPage extends Component {
     )
   }
 }
->>>>>>> 8f37225829f83cbc9fbd0ffeaaa0ecc30110bc6a
 
 export default IndexPage
