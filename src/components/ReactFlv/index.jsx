@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import Reflv from 'reflv';
+import Reflv from './reFlv';
 import './index.scss'
 
 class ReactFlv extends PureComponent {

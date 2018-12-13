@@ -64,7 +64,7 @@ class IndexPage extends Component {
           <VideoPlay></VideoPlay>
         </div>
         <Link to="/page-2/">Go to page 2</Link>
-        <Link to="/index1/">Go to Index1</Link> */}
+        <Linkk to="/index1/">Go to Index1</Linkk> */}
       </Layout>
     )
   }

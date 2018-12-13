@@ -2,7 +2,9 @@
 @import '../../style/reset.scss';
 .video-flv {
   border: solid 1px red;
-  width: px2rem(1008);
+  display: block;
+  
+  width: px2rem(900);
   height: px2rem(568);
   margin: 0 auto;
 }
