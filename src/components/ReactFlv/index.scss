@@ -1,0 +1,8 @@
+@import '../../style/base.scss';
+@import '../../style/reset.scss';
+.video-flv {
+  border: solid 1px red;
+  width: px2rem(1008);
+  height: px2rem(568);
+  margin: 0 auto;
+}

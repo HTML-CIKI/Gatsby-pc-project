@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import ReactFlv from '../ReactFlv/index'
 // import PropTypes from 'prop-types'
 import './index.scss'
 
@@ -17,9 +17,7 @@ class Banner extends Component {
     return (
       <div className="zzdj-banner-wrap">
         <div className="zzdj-header-inner">
-          {/* <Link to="http://www.zhizhudj.com/" className="nav-item-link" className="logo">
-            <img src={headerLogo} />
-          </Link> */}
+          {/* <ReactFlv></ReactFlv> */}
         </div>
       </div>
     )
