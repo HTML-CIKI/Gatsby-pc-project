@@ -5,12 +5,10 @@ $header-img: url('./../../assets/images/banner/banner-bg.jpg') no-repeat;;
 .zzdj-banner-wrap {
   width: 100%;
   position: relative;
-  height: $banner-height;
   &:before {
     content: ' ';
     display: block;
     width: 100%;
-    height: $banner-height;
     background: $header-img;
     position: absolute;
     left: 0;
