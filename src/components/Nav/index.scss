@@ -22,11 +22,11 @@ $header-color: #be9457;
   }
   &:before {
     left: 0;
-    background: url('../../assets/images/header/Act_header_left.gif') no-repeat 100%;
+    background: url('./../../assets/images/header/Act_header_left.gif') no-repeat 100%;
   }
   &:after {
     right: 0;
-    background: url('../../assets/images/header/Act_header_right.gif') no-repeat 100%;
+    background: url('./../../assets/images/header/Act_header_right.gif') no-repeat 100%;
   }
   div {
     box-sizing: border-box;
