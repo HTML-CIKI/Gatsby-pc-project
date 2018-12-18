@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-// import ReactFlv from '../ReactFlv/index'
+import ReactFlv from '../ReactFlv/index'
 // import PropTypes from 'prop-types'
 import VideoPlay from '../Video/video'
+import PlayerV from '../TcPlayer/index'
 import './index.scss'
 
 
@@ -18,8 +19,16 @@ class Banner extends Component {
     return (
       <div className="zzdj-banner-wrap">
         <div className="zzdj-header-inner">
-        <VideoPlay></VideoPlay>
-          {/* <ReactFlv></ReactFlv> */}
+        <PlayerV
+          className="pla"
+          m3u8="http://172.18.1.97:7002/live/test.m3u8"
+          autoplay={true}
+          coverpic="http://www.test.com/myimage.jpg"
+          width="1200"
+          height="600"
+        >
+        </PlayerV>
+        {/* <VideoPlay></VideoPlay> */}
         </div>
       </div>
     )

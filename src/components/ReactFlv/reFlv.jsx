@@ -70,6 +70,7 @@ export default class Reflv extends Component {
   }
 
   initFlv = ($video) => {
+    debugger
     if ($video) {
       if (flvjs.isSupported()) {
         let flvPlayer = flvjs.createPlayer({ ...this.props }, this.props.config);

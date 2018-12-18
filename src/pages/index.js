@@ -20,7 +20,7 @@ class IndexPage extends Component {
     return (
       <Layout title={'蜘蛛电竞-为精彩比赛喝彩'}>
         <Banner></Banner>
-        <Nowlive></Nowlive>
+        {/* <Nowlive></Nowlive> */}
         {/* <div>
           <ImgLazy src="https://rpic.douyucdn.cn/asrpic/181212/1863767_1449_66.jpg/dy1"
               placeholder="https://rpic.douyucdn.cn/asrpic/181212/229346_1528.jpg/dy1"

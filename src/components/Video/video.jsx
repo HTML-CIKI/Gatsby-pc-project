@@ -14,10 +14,10 @@ class VideoPlay extends Component {
     return (
       <div className='video'>
       {/* m3u8 fls 播放 */}
-        <Player>
+        <Player width="1200">
           <HLSSource
             isVideoChild
-            src="http://localhost:7002/live/test.m3u8"
+            src="http://172.18.1.97:7002/live/test.m3u8"
           />
         </Player>
         {/* mp4 视频播放 */}
