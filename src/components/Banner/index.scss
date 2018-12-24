@@ -1,0 +1,12 @@
+@import '../../style/base.scss';
+@import '../../style/reset.scss';
+$border-red: solid 1px red;
+$banner-bg-color: rgba(0,0,0,0.6);
+
+.zzdj-banner-wrap {
+  width: 100%;
+  height: px2rem(672);
+  border: $border-red;
+  box-sizing: border-box;
+  background: $banner-bg-color;
+}

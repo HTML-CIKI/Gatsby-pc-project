@@ -1,0 +1,107 @@
+@import '../../style/base.scss';
+@import '../../style/reset.scss';
+$header-height:  px2rem(56);
+$header-color: transparent;
+$border-red: solid 1px red;
+
+.zzdj-header-wrap {
+  width: 100%;
+  height:$header-height;
+  border: $border-red;
+  font-family: '微软雅黑';
+  box-sizing: border-box;
+  // background: $theme-color;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  div {
+    box-sizing: border-box;
+  }
+  .zzdj-header-inner {
+    width: px2rem(1400);
+    height: 100%;
+    margin: 0 auto;
+    color: $header-color;
+    .logo {
+      float: left;
+      padding-top: px2rem(10);
+      img {
+        width: px2rem(120);
+      }
+    }
+    .zzdj-header-nav {
+      float: left;
+      height: 100%;
+      margin-left: px2rem(40);
+      width: px2rem(350);
+      display: flex;
+      justify-content: right;
+      li {
+        float: left;
+        position: relative;
+        margin: px2rem(10) px2rem(2);
+        font-size: px2rem(18);
+        text-align: center;
+        padding: px2rem(4) px2rem(10) px2rem(4) px2rem(10);
+        border-radius: px2rem(15);
+        .nav-item-link {
+          overflow: hidden;
+          color: #fff;
+          font-size: px2rem(14);
+          span {
+            float: left;
+            padding: px2rem(4) px2rem(5) px2rem(6) px2rem(10);
+          }
+          .arrow {
+            float: left;
+            width: 9px;
+            height: 5px;
+            margin-top: 8px;
+            transition: .5s transform;
+            background: url(../../assets/images/header/arrow.png) no-repeat;
+          }
+        }
+        &:hover {
+          background: #ff9600;
+          .arrow {
+            transform:rotate(180deg);
+            transition: .5s transform;
+          }
+        }
+      }
+      .nav-active {
+        background: #ff9600;
+      }
+    }
+    // search box
+    .nav-search-wrap {
+      float: left;
+      width: px2rem(252);
+      height: px2rem(34);
+      margin: px2rem(11) 0 px2rem(20) 0;
+      border-radius: px2rem(17);
+      background: rgba(255,255,255,.3);
+      input {
+        float: left;
+        height: 100%;
+        background: transparent;
+        color: #000;
+        line-height: px2rem(34);
+        padding-left: px2rem(15);
+        font-size: px2rem(14);
+        width: 200px;
+        border-radius: px2rem(17);
+        outline: none;
+      }
+      span {
+        float: right;
+        margin-right: px2rem(15);
+        width: px2rem(17);
+        height: px2rem(17);
+        margin-top: px2rem(8);
+        background: url(../../assets/images/header/search_btn_default.png) no-repeat;
+      } 
+    }
+  }
+}

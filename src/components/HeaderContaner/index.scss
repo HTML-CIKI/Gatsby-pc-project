@@ -1,0 +1,13 @@
+@import '../../style/base.scss';
+@import '../../style/reset.scss';
+.zzdj-header-container {
+  width: 100%;
+  height: px2rem(754);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: url(../../assets/images/contner.jpg) center center no-repeat;
+  background-size: cover;
+}

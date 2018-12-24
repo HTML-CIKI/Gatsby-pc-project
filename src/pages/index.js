@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/Layout/layout'
-import Image from '../components/image'
-import './index.scss';
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site1111 121212121rr.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import { HeaderContaner, Layout, Banner } from '../components/index'
+// import { Banner } from '../components/index'
+class IndexPage extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+      name: 'LeiZP',
+      meta: {
+        title: '首页'
+      }
+    }
+  }
+
+  render () {
+    return (
+      <div>
+        <HeaderContaner></HeaderContaner>
+        <Layout title={'蜘蛛电竞-为精彩比赛喝彩'}>
+          <Banner></Banner>
+        </Layout>
+      </div>
+    )
+  }
+}
 
 export default IndexPage
