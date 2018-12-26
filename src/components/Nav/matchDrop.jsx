@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 // import PropTypes from 'prop-types'
 import './index.scss'
-import Player from '../Player'
 
-class Banner extends Component {
+class MatchDrop extends Component {
 
   constructor (props) {
     super(props)
@@ -12,13 +12,21 @@ class Banner extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log(location)
+  }
+
+  componentWillUnmount() {
+
+  }
+
   render () {
     return (
-      <div className="zzdj-banner-wrap">
-        <Player></Player>
+      <div className="drop-match">
+        222
       </div>
     )
   }
 }
 
-export default Banner
+export default MatchDrop
