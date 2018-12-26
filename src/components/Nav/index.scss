@@ -101,7 +101,52 @@ $border-red: solid 1px red;
         height: px2rem(17);
         margin-top: px2rem(8);
         background: url(../../assets/images/header/search_btn_default.png) no-repeat;
-      } 
+      }
+      &:hover {
+        background: rgba(255,255,255,.7);
+      }
+    }
+    // 右边导航
+    .nav-right-wrap {
+      min-width: px2rem(395);
+      height: 100%;
+      border: $border-red;
+      float: right;
+      ul{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        li {
+          float: left;
+          margin: px2rem(12) 0 0 px2rem(10);
+          font-size: px2rem(12);
+          .nav-right-item {
+            color: #fff;
+            line-height: px2rem(28);
+            padding: px2rem(5);
+            opacity: 0.6;
+            .item {
+              float: left;
+              width: px2rem(23);
+              height: px2rem(19);
+              margin-top: px2rem(5);
+              background: url('../../assets/images/header/header_icon.png') no-repeat;
+            }
+            .icon1 {
+              background-position: 0 -42px;
+            }
+            .icon2 {
+              background-position: 0 -114px;
+            }
+            .icon3 {
+              background-position: 0 -184px;
+            }
+            .icon4 {
+              background-position: 0 -255px;
+            }
+          }
+        }
+      }
     }
   }
 }

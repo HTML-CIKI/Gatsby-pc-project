@@ -65,6 +65,36 @@ class Nav extends Component {
             <input placeholder="小Z-大魔王" />
             <span></span>
           </div>
+          {/* 右边导航 */}
+          <div className="nav-right-wrap">
+            <ul>
+              <li>
+                <Link to="/" className="nav-right-item">
+                  <i className='item icon1'></i>
+                  <span>开播</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="nav-right-item">
+                  <i className='item icon2'></i>
+                  <span>下载</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="nav-right-item">
+                  <i className='item icon3'></i>
+                  <span>订阅</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="nav-right-item">
+                  <i className='item icon4'></i>
+                  <span>历史</span>
+                </Link>
+              </li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     )
